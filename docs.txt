@@ -1,0 +1,2 @@
+-projects\groovy-learn> groovy ./src/student/Example.groovy
+-projects\groovy-learn> groovy ./tests/student/StudentTest.groovy
