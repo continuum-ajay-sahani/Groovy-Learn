@@ -7,8 +7,15 @@ class EmployeeTest extends GroovyTestCase {
       Employee mst = new Employee();
       mst.name = "Joe";
       mst.ID = 1;
-      def expected = 'Joe1'
-      assertToString(mst.Display(), expected)
+      def expected = 'Joe ,emp_1'
+      assertToString(mst.display(), expected)
+   }
+
+   void testGreet() {
+      Employee mst = new Employee();
+      mst.name = "Joe";
+      def expected = 'Hello, Joe!'
+      assertToString(mst.greeting(), expected)
    }
 
 }

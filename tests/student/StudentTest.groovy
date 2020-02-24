@@ -7,7 +7,14 @@ class StudentTest extends GroovyTestCase {
       Student mst = new Student();
       mst.name = "Joe";
       mst.ID = 1;
-      def expected = 'Joe1'
-      assertToString(mst.Display(), expected)
+      def expected = 'Joe ,stu_1'
+      assertToString(mst.display(), expected)
+   }
+
+    void testGreet() {
+      Student mst = new Student();
+      mst.name = "Joe";
+      def expected = 'Hello, Joe!'
+      assertToString(mst.greeting(), expected)
    }
 }

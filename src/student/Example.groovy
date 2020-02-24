@@ -5,6 +5,6 @@ class Example {
       Student mst = new Student();
       mst.name = "Joe";
       mst.ID = 1;
-      println(mst.Display())
+      println(mst.display())
    } 
 } 

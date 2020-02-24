@@ -1,10 +1,10 @@
 package src.student
 
-public class Student {
-   String name;
-   int ID;
-	
-   String Display() {
-      return name + ID;
+import src.entity.Identity
+
+public class Student implements Identity{
+  
+   String display() {
+      return name +' ,stu_'+ ID;
    }  
 }

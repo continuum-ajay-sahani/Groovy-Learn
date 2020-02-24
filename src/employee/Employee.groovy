@@ -1,10 +1,10 @@
 package src.employee
 
-public class Employee {
-   String name;
-   int ID;
-	
-   String Display() {
-      return name + ID;
+import src.entity.Identity
+
+public class Employee implements Identity{
+  
+   String display() {
+      return name +' ,emp_'+ ID;
    }  
 }
