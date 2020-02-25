@@ -1,0 +1,26 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.eriwen:gradle-cobertura-plugin:1.1.1'
+    }
+}
+
+apply plugin: 'groovy'
+apply plugin: 'cobertura'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "org.codehaus.groovy:groovy-all:3.0.0"
+    testCompile "junit:junit:3"
+}
+
+cobertura {
+    format = 'html'
+    includes = ['**/*.java', '**/*.groovy']
+    excludes = ['com/thirdparty/**/*.*']
+}

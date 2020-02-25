@@ -11,7 +11,7 @@ class StudentTest extends GroovyTestCase {
       assertToString(mst.display(), expected)
    }
 
-    void testGreet() {
+   void testGreet() {
       Student mst = new Student();
       mst.name = "Joe";
       def expected = 'Hello, Joe!'
