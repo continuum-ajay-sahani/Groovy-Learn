@@ -18,4 +18,12 @@ class EmployeeTest extends GroovyTestCase {
       assertToString(mst.greeting(), expected)
    }
 
+   void testDisplay2() {
+      Employee mst = new Employee();
+      mst.name = "Joe";
+      mst.ID = 1;
+      def expected = 'Joe ,emp_1_2'
+      assertToString(mst.display2(), expected)
+   }
+
 }
